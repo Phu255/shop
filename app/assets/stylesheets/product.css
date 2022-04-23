@@ -1,0 +1,31 @@
+
+#product_list table tr td {
+    padding: 5px;
+    vertical-align: top;
+} 
+#product_list .list_image {
+    width: 100px;
+    height: 120px;
+}
+#product_list .list_description {
+    width: 60%;
+}
+#product_list .list_description dl {
+    margin: 0;
+}
+#product_list .list_description dt {
+    color:rgb(184, 138, 230);
+    font-weight: bold;
+    font-size: larger;
+}
+#product_list .list_description dd {
+    margin: 0;
+}
+#product_list .list_actions {
+    font-size: x-small;
+    text-align: right;
+    padding-left: 1em;
+}
+
+
+

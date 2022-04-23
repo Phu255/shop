@@ -1,0 +1,46 @@
+<head>
+ <title>All Nabi Dress</title>
+ <header></header>
+</head>
+<div id="product_list">
+ <body>
+<h1 id="brand">All Products</h1>
+
+    
+  <div class="container-fluid">
+    <table>
+    <% @products.each do |product| %>
+        <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+  
+            <td>
+                <%= image_tag(product.image_url, :class => 'list_image') %>
+            </td>
+  
+            <td class="list_description">
+                <dl>
+                    <dt><%= product.title %></dt>
+                    <dd><%= truncate(strip_tags(product.description),
+                            :length => 80) %></dd>
+                </dl>
+            </td>
+  
+            <td class="list_actions">
+                <%= link_to 'Show', product %><br/>
+                <%= link_to 'Edit', edit_product_path(product) %><br/>
+                <%= link_to 'Destroy', product, 
+                    data: { confirm: 'Are you sure?' },
+                    :method => :delete %>
+            </td>
+        </tr>
+    <% end %>
+    </table>
+</div>
+ 
+<br />
+ 
+<%= link_to 'New product', new_product_path ,class:"btn btn-info  m-3"%>
+<br>
+<br>
+</div>
+</body>
+

@@ -1,0 +1,51 @@
+h2{
+     text-align:center;
+      color:rgb(184, 138, 230);
+      font-family: "Times New Roman", Times, serif;
+    }
+h3,h4{
+     text-align:center;
+      color:rgb(184, 138, 230);
+      font-family: "Times New Roman", Times, serif;
+      text-shadow: 2px 2px black;
+    }
+header{
+      background-color: white;
+      margin-top:80px;
+    }
+#fontchu{
+  color:rgb(184, 138, 230);
+}
+#brand{
+	font-size:40px;
+	text-shadow:3px 3px black;
+	text-align:center;
+  color:rgb(184, 138, 230);
+  font-family: "Times New Roman", Times, serif;
+  
+}
+   
+/*footer*/
+#all .grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  background-color: black;
+}
+#all .grid-item {
+  margin-left:20px;
+  color:rgb(184, 138, 230);
+  font-family: "Times New Roman", Times, serif;
+  background-color: black;
+  padding: 0px;
+  font-size: 20px;
+  text-align: left;
+}
+/*header*/
+#all .nav-link{
+   color:rgb(184, 138, 230);
+   font-family:Times New Roman, Times, serif;
+}
+
+
+
+

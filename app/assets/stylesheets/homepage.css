@@ -1,0 +1,29 @@
+
+
+#homepage #demo1{
+      width:50%;
+    float:left;}      
+#homepage #demo2{
+      width:50%;
+      float:right;    
+    }
+#homepage .hinhtrangchu{
+      text-align:center;
+      width:675px;
+      height:900px; 
+      margin-left:auto;
+      margin-right:auto;
+      display:block;
+    }
+.carousel-control-prev{
+    background-color: black;
+    margin-left:172px;
+    margin-top:48px;
+  }
+.carousel-control-next{
+    background-color: black;
+    margin-top:48px;
+    margin-right:172px;
+  }
+   
+

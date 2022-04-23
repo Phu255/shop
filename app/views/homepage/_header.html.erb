@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <header></header>
+
+  <div id="all">
+  <nav class="navbar navbar-expand-sm bg-black fixed-top "> 
+  <%= link_to image_tag("https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/273920973_4531307043636398_608178222090058839_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=T3dLWvjVzWMAX-8J92j&_nc_ht=scontent.fsgn5-10.fna&oh=00_AT_plzb1apqEuERcgjHzm5cqqK9CeqmE7VV_d_1wVxazhw&oe=62642F7B",style:"width:50px;height:50px;margin-bottom:0px;margin-top:0px;margin-left:20px;",class:"rounded-pill"),root_path,class:"navbar-brand" %>
+      <ul class="navbar-nav me-auto ">
+        <li class="nav-item" >
+        <%= link_to "All Dress", store_index_path, class:"nav-link" %>
+        </li>
+
+<% if user_signed_in? %>
+     <li class="nav-item" >
+        <%= link_to "Sign Out", destroy_user_session_path,method: :delete ,class:"nav-link" %>
+        </li>
+
+      <li class="nav-item" >
+        <%= link_to "Edit Profile",  edit_user_registration_path ,class:"nav-link" %>
+        </li>  
+
+       <li class="nav-item" >
+        <%= link_to "Your Cart", carts_path, class:"nav-link" %>
+        </li> 
+<% else %>
+        <li class="nav-item" >
+        <%= link_to "Sign Up", new_user_registration_path, class:"nav-link" %>
+        </li>
+
+         <li class="nav-item" >
+        <%= link_to "Log In", new_user_session_path, class:"nav-link" %>
+        </li>
+        
+<% end %>
+     
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" style="color:rgb(184, 138, 230)" data-bs-toggle="dropdown">Find Us On</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" style="font-family:Times New Roman, Times, serif" target="_blank" href="https://www.instagram.com/nabi.larobe/">Instagram</a></li>
+            <li><a class="dropdown-item" style="font-family:Times New Roman, Times, serif" target="_blank" href="https://www.facebook.com/nabilarobee">Facebook</a></li>
+            <li><a class="dropdown-item" style="font-family:Times New Roman, Times, serif" target="_blank" href="https://shopee.vn/nabilarobe">Shopee</a></li>
+          </ul>
+        </li>
+      </ul>
+        <input class="form-control" style="background-color:white;width:330px;height:25px;color:rgb(184, 138, 230);font-family:Times New Roman, Times, serif;" type="text" placeholder="What are you looking for ? (name,color,...)">
+        <button class="btn" type="submit">
+          <img src="https://thumbs.dreamstime.com/b/home-search-icon-element-minimalistic-icons-mobile-concept-web-apps-neon-can-be-used-dark-gradient-background-mo-119396547.jpg"  style="width:35px;height:35px;margin-bottom:0px;margin-top:0px;" class="rounded-pill">
+        </button>
+    </nav>
+  </div>
+</html>
+
+
+
