@@ -11,7 +11,6 @@ class CartsController < ApplicationController
 
   # GET /carts/1 or /carts/1.json
   def show
-    
   end
 
   # GET /carts/new
